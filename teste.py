@@ -1,7 +1,8 @@
-a = float(input('Entre com uma altura: '))
+# Verificando idades
 
-b = float(input('Entre com um peso: '))
+idade  = int(input())
 
-imc = b / a**2
-
-print(f'O Valor do IMC é: {imc:.2f} ')
+if idade> 18:
+    print('E maior')
+else:
+    print('menor de idade')    
