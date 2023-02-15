@@ -1,12 +1,10 @@
-a = int(input())
-b = int(input())
-
+a,b = map(float,input().split())
 m = a+b
-m = int(m/2)
+m = (m/2)
 
-if m>6:
+if m>=7:
     print('Aprovado')
-elif m>3:
-    print('Recuperação')
+elif m>=4:
+    print('Recuperacao')
 else:
     print('Reprovado')
