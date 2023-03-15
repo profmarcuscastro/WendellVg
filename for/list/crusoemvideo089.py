@@ -2,7 +2,7 @@ lista_alunos=[]
 
 
 while True:
-    print('Quer continuar? S/N')
+    print('Quer continuar? ("N" para interromper)')
 
     #input() sempre recebe dados no formato de string
     comp= input()
@@ -20,3 +20,12 @@ while True:
 for aluno in lista_alunos:
     print(f'nome: {aluno[0]}')
     print(f'media: {aluno[2]}')
+
+while True:
+    nt=int(input('Mostrar nota de qual aluno? (digite 999 para interromper)'))
+    if nt == 999:
+        break
+    
+    if nt <= len(lista_alunos) - 1:
+        print(f'Notas de {lista_alunos[nt][0]} são {lista_alunos[nt][1]}e a média é: {lista_alunos[nt][2]}')
+        
