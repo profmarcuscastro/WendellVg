@@ -9,7 +9,7 @@ n = n-20*notas20
 notas10 = n//10.00
 n = n-10*notas10
 notas5 = n//5.00
-n = n-5*notas10
+n = n-5*notas5
 notas2 = n//2.00
 n = n-2*notas2
 moedas100 = n//1.00
@@ -23,19 +23,20 @@ n = n-0.10*moedas10
 moedas5 = n//0.05   
 n = n-0.05*moedas5
 moedas1 = n//0.01
-n = n-0.01*moedas1
+if moedas1 >0:
+    moedas1+=1
 
 print('NOTAS:')
-print(notas100,'nota(s) de R$ 100.00')
-print(notas50,'nota(s) de R$ 50.00')
-print(notas20, 'nota(s) de R$ 20.00')
-print(notas10, 'nota(s) de R$ 10.00')
-print(notas5, 'nota(s) de R$ 5.00')
-print(notas2, 'nota(s) de R$ 2.00')
+print(int(notas100),'nota(s) de R$ 100.00')
+print(int(notas50),'nota(s) de R$ 50.00')
+print(int(notas20), 'nota(s) de R$ 20.00')
+print(int(notas10), 'nota(s) de R$ 10.00')
+print(int(notas5 ),'nota(s) de R$ 5.00')
+print(int(notas2 ),'nota(s) de R$ 2.00')
 print('MOEDAS:')
-print(moedas100, 'moedas(s) de R$ 1.00')
-print(moedas50, 'moedas(s) de R$ 0.50')
-print(moedas25, 'moedas(s) de R$ 0.25')
-print(moedas10, 'moedas(s) de R$ 0.10')
-print(moedas5, 'moedas(s) de R$ 0.05')
-print(moedas1, 'moedas(s) de R$ 0.01')
+print(int(moedas100), 'moeda(s) de R$ 1.00')
+print(int(moedas50), 'moeda(s) de R$ 0.50')
+print(int(moedas25), 'moeda(s) de R$ 0.25')
+print(int(moedas10), 'moeda(s) de R$ 0.10')
+print(int(moedas5),'moeda(s) de R$ 0.05')
+print(int(moedas1),'moeda(s) de R$ 0.01')
