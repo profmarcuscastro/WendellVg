@@ -9,4 +9,4 @@ if tempo<=0:
 h = tempo//60
 m = tempo%60
 
-print(f'O JOGO DUROU {h} HORA(S) E {m} MINUTOS(S)')
+print(f'O JOGO DUROU {h} HORA(S) E {m} MINUTO(S)')
